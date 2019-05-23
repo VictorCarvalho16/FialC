@@ -1,0 +1,42 @@
+Algoritmo "ComRec"
+
+Var
+   perdido,saida,entrada,A,B,C: inteiro
+   media, rec,ret,desc,pp,pc: real
+
+
+Inicio
+   escreva ("Informe a Quantidade de vasilhames distribuidos: ")
+   leia (saida)
+   Escreva ("Informe a Quantidade de vasilhames coletados:    ")
+   leia (entrada)
+   Escreva ("Informe a Quantidade de vasilhames Recicláveis:  ")
+   LEia (A)
+   Escreva ("Informe a Quantidade de vasilhames Retornáveis:  ")
+   leia (B)
+   Escreva ("Informe a Quantidade de vasilhames Descartáveis: ")
+   leia (C)
+   se entrada = a+b+c entao
+      media <- entrada/3
+      Escreval ("A sua média entre os vasilhames coletados é ",media:6:2)
+      Escreval ("--------------------------------------------------------------")
+      perdido <- saida - entrada
+      Escreval ("A quantidade de vasilhames perdidos é ", perdido)
+      eSCREVAL ("")
+      eSCREVAL ("")
+      rec <- (A*100)/saida
+      ret <- (B*100)/saida
+      desc <-(C*100)/saida
+      pp <- (perdido*100)/saida
+      pc <- (entrada*100)/saida
+      Escreval ("Produtos Recicláveis:           ",rec:2:1,"%")
+      Escreval ("Produtos Retornáveis:           ",ret:2:1,"%")
+      Escreval ("Produtos Descartáveis:          ",desc:2:1,"%")
+      Escreval ("Produtos Coletados:             ",pc:2:1,"%")
+      Escreval ("Podrutos Perdidos:              ",pp:2:1,"%")
+   senao
+      Escreva ("Dados de Vasilhames Coletados foi informado incorretamente.")
+   fimse
+   Escreva ("--------------------------------------------------------------")
+
+Fimalgoritmo
